@@ -1,0 +1,26 @@
+a {
+    margin: 10px;
+}
+
+div {
+    margin: 10px;
+}
+
+h4 {
+    margin: 15px;
+}
+
+.links {
+    background-color: beige;
+    overflow: hidden;
+}
+
+.links a {
+    float:left;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hidden {
+    display:none;
+}

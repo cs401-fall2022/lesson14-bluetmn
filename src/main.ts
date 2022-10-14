@@ -1,6 +1,12 @@
 
-function sayHello(source: string) : void {
-    console.log(`Hello there! It's me, ${ source }`);
-}
+import { sayHello } from "./hello" ;
 
-sayHello("World");
+let btn = document.getElementById("surprise");
+
+function surprise() : void {
+    let toHide = document.getElementById("btn");
+    let toChange = document.getElementById("message");
+
+    btn.classList.add("hidden");
+    toChange.innerHTML = sayHello("World");
+}

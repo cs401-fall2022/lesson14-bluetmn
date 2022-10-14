@@ -22,8 +22,8 @@ and
 ```npm install --save-dev typescript gulp@4.0.0 gulp-typescript```  
 to install the necessary gulp and typescript packages.  
 
-In the src file, create a typescript file. In this example, src/main.ts
-holds a hello world function definition and then calls that function.  
+In the src file, create a typescript file. In this example, src/hello.ts
+holds a hello world function definition and then main.js calls that function after importing it. 
 
 As described in the tutorial, a tsconfig.json file is needed to tell the compiler how to compile the typescript files. This will be
 under the main project folder. See the above file or the tutorial for an example. 
@@ -32,8 +32,17 @@ A gulp file is also needed to correctly build the project. This will be located 
 
 # Run the Project 
 To run the project, run ```gulp```, and then run ```node dist/main.js```  
-You should see the hello world function output.  
+You should see the hello world function output.  If you do, then congrats! You got the setup to work from the backend. Now let's use Browserify to get the code to the frontend.  
 
-Sources Used:
-https://www.w3schools.com/cssref/pr_pos_overflow.asp
+# Browserify 
+First, install the necessary packages browserify, tsify, and vinyl-source-stream. See the command below:  
+```npm install --save-dev browserify tsify vinyl-source-stream```  
+
+
+Sources Used:  
+- https://www.w3schools.com/cssref/pr_pos_overflow.asp  
+- https://www.typescriptlang.org/docs/handbook/gulp.html  
+- https://code.visualstudio.com/docs/typescript/typescript-compiling  
+- https://www.typescriptlang.org/docs/handbook/migrating-from-javascript.html  
+- https://www.markdownguide.org/cheat-sheet/
 
