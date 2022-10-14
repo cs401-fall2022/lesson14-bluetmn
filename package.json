@@ -1,0 +1,24 @@
+{
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "typescript": "^4.8.4"
+  },
+  "name": "lesson14-bluetmn",
+  "description": "Sources Used: https://www.w3schools.com/cssref/pr_pos_overflow.asp",
+  "version": "1.0.0",
+  "main": "./dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cs401-fall2022/lesson14-bluetmn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cs401-fall2022/lesson14-bluetmn/issues"
+  },
+  "homepage": "https://github.com/cs401-fall2022/lesson14-bluetmn#readme"
+}
