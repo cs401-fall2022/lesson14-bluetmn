@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Migrating Projects</title>
+    <meta name="description" content="Tutorial for Migrating Projects">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/type.css" asp-append-version="true" />
+</head>
+
+<body>
+    <h1>Typescript Quickstart Tutorial</h1>
+    <div class = "links">
+        <a href="./index.html">Home</a>
+        <a href="./basics.html">Type Basics</a>
+        <a href="./types.html">Creating New Types</a>
+        <a href="./migrating.html">Migrate an Existing Project</a>
+    </div>
+
+    <div>
+        <h4>Configuration File</h4>
+        <div>
+            Typescript uses an input file called tsconfig.json to pass
+            information to the compiler on what files it should take in, 
+            what settings should be used to compile, and where the compiled
+            js files should be placed. [ex] 
+        </div>
+
+        <h4>Transfering to Typescript</h4>
+        <div>
+            To transfer a project to typescript, rename the files from
+            *.js to *.ts. Because all javascript is also typescript, this step is sufficient
+            enough. However, to fully make use of typscript's utility, strictness
+            options can be adjusted to ensure that the transfered code is rigorous
+            and error free.
+        </div>
+
+        <h4>Strictness Options</h4>
+        <div>
+            Some of the options that will affect how the code is compiled,
+            and what errors are not allowed are shown below:
+            <ul>
+                <li>"allowUnreachableCode" - set this to false to avoid code that
+                    will never get executed no matter what 
+                </li>
+                <li>
+                    "noImplicitAny" - this option will not allow variables 
+                    that have the type "any" arising from situtations when
+                    the compiler cannot tell from declaration or context.
+                </li>
+                <li>
+                    "noImplicitReturns" - this option will not allow functions 
+                    to omit returns, avoiding bugs related to this.
+                </li>
+            </ul>
+            
+            This list shows just a few examples of the strictness 
+            options of typescript and why it is a useful tool.
+        </div>
+    </div>
+
+</body>
+
+</html>
