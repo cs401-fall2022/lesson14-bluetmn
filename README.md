@@ -39,7 +39,36 @@ gulp.task("default", function () {
 ```
 # Run the Project 
 To run the project, run ```gulp```, and then run ```node dist/main.js```  
-You should see the hello world function output.  If you do, then congrats! You got the setup to work from the backend. Now let's use Browserify to get the code to the frontend.  
+You should see the hello world function output.  If you do, then congrats! You got the setup to work from the backend. Now let's use Browserify to get the code to the frontend.  But even before that, let's test our code!  
+
+# Test the Project  
+To test the function we created, use the command  
+```npm test```  
+which will run a unit test and display the results.  Below is what is printed:  
+```console
+PS C:\Users\thoma\school\CS401\lesson14-bluetmn> npm test
+
+> lesson14-bluetmn@1.0.0 test
+> npm run compile && npm run unit
+
+
+> lesson14-bluetmn@1.0.0 compile
+> tsc
+
+
+> lesson14-bluetmn@1.0.0 unit
+> jest
+
+ PASS  test/hello.test.ts
+  say hello
+    √ returns correct string (6 ms)                                                                                                                                              
+                                                                                                                                                                                 
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        2.059 s
+Ran all test suites.
+```
 
 # Browserify 
 First, install the necessary packages browserify, tsify, and vinyl-source-stream. See the command below:  
@@ -64,5 +93,9 @@ Sources Used:
 - https://www.typescriptlang.org/docs/handbook/gulp.html  
 - https://code.visualstudio.com/docs/typescript/typescript-compiling  
 - https://www.typescriptlang.org/docs/handbook/migrating-from-javascript.html  
-- https://www.markdownguide.org/cheat-sheet/
-
+- https://www.markdownguide.org/cheat-sheet/  
+- https://www.typescriptlang.org/docs/handbook/interfaces.html  
+- https://www.typescriptlang.org/docs/handbook/tsconfig-json.html  
+- https://qunitjs.com/intro/  
+- https://jestjs.io/docs/getting-started  
+- https://github.com/shanep/typescript-hello (for help with testing configuration specifically)  
