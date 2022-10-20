@@ -1,5 +1,17 @@
+html {
+    background-color: lightskyblue;    
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
 img {
     margin: 20px;
+    border-radius: 20px;
+}
+
+.segment {
+    padding: 10px;
+    border: solid 3px black;
+    border-radius: 40px;
 }
 
 a {
@@ -10,12 +22,20 @@ div {
     margin: 10px;
 }
 
+.content {
+    width:80%;
+}
+
+h1 {
+    text-shadow: 2px 2px 5px blue;
+}
+
 h4 {
     margin: 15px;
 }
 
 .links {
-    background-color: beige;
+    background-color: blue;
     overflow: hidden;
 }
 
@@ -23,8 +43,32 @@ h4 {
     float:left;
     text-decoration: none;
     font-size: 18px;
+    color: white;
 }
 
 .hidden {
     display:none;
+}
+
+#first {
+    grid-area: top;
+}
+
+#second {
+    grid-area: bottom;
+}
+
+#imagegrid {
+    grid-area: side;
+}
+
+#logo {
+    width:50%;
+    height:50%
+}
+
+#grid {
+    grid-template-areas: 
+      "top top side"
+      "bottom bottom side";
 }
